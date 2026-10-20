@@ -1,0 +1,35 @@
+Default parameters a = 0.10, b = 1.00, c = 1.00
+G_SN = -3.0250,  G_H = -1.7355
+
+Table 1: equilibria and eigenvalues
+G = -3.50: D = -0.190 < 0, no equilibria
+G = -2.50:  upper (-3.209, -0.321): 0.485, 0.944, unstable node;  lower (-7.791, -0.779): -0.070, 6.540, saddle;
+G = -2.00:  upper (-2.298, -0.230): 0.214 +/- 0.771i, unstable spiral;  lower (-8.702, -0.870): -0.085, 7.556, saddle;
+G = -1.50:  upper (-1.595, -0.159): -0.173 +/- 0.867i, stable spiral;  lower (-9.405, -0.941): -0.094, 8.339, saddle;
+G = -0.50:  upper (-0.475, -0.048): -0.789 +/- 0.619i, stable spiral;  lower (-10.525, -1.052): -0.105, 9.582, saddle;
+G =  1.60:  upper (1.301, 0.130): -0.440, -3.091, stable node;  lower (-12.301, -1.230): -0.118, 11.549, saddle;
+
+Table 2: start at the baseline (0,0)
+      G | outcome   |   min v |   max v |  extrema | C1 C2 C3
+  -3.50 | escapes   | -102.542 |   0.000 |        0 | no   no   no 
+  -2.00 | escapes   | -103.875 |   0.000 |        0 | no   no   no 
+  -1.50 | escapes   | -109.581 |   0.000 |        0 | no   no   no 
+  -1.30 | escapes   | -104.792 |   0.000 |        0 | no   no   no 
+  -1.20 | bounded   |  -0.707 |   0.230 |       10 | yes  yes  no 
+  -1.00 | bounded   |  -0.500 |   0.000 |        7 | yes  yes  no 
+  -0.50 | bounded   |  -0.209 |   0.000 |        3 | yes  yes  no 
+   0.00 | bounded   |   0.000 |   0.000 |        0 | yes  yes  yes
+   1.60 | bounded   |   0.000 |   0.491 |        1 | yes  yes  yes
+   5.00 | bounded   |   0.000 |   1.217 |        1 | yes  yes  yes
+  20.00 | bounded   |   0.000 |   3.181 |        1 | yes  no   no 
+
+Table 3: thresholds (b = 1). G' = smallest G for which the baseline (0,0) stays bounded
+a = 0.10, c = 0.0:  G_SN = -3.025,  G_H = -1.089,  G' = -1.062
+a = 0.10, c = 1.0:  G_SN = -3.025,  G_H = -1.736,  G' = -1.254
+a = 0.10, c = 3.0:  G_SN = -3.025,  G_H = -2.475,  G' = -1.618
+a = 0.30, c = 1.0:  G_SN = -1.408,  G_H = -1.361,  G' = -1.182
+
+Boundary point for G = 2 at u0 = -11:  v0 = -1.29943   (g_simul.py comment: -1.29943)
+Step-size check: max difference between h = 0.001 and h = 0.0005 on [0,30]: 7.0e-06
+Boundary points for G = -1.5: (-14.0, -0.961), (-10.0, -0.945), (-7.0, -0.917), (-4.0, -0.840), (-1.5, -0.471), (0.0, 1.504)
+Boundary points for G = 1.6: (-15.0, -1.186), (-11.0, -1.259), (-7.0, -1.425)
